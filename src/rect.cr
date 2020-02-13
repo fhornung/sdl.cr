@@ -8,7 +8,9 @@ module SDL
       SDL::Point.new({{x}}, {{y}})
     end
 
-    def initialize(@x, @y)
+    def initialize(x, y)
+      @x = x.to_i
+      @y = y.to_i
     end
   end
 
@@ -23,7 +25,11 @@ module SDL
       SDL::Rect.new({{x}}, {{y}}, {{w}}, {{h}})
     end
 
-    def initialize(@x, @y, @w, @h)
+    def initialize(x, y, w, h)
+      @x = x.to_i
+      @y = y.to_i
+      @w = w.to_i
+      @h = h.to_i
     end
   end
 end
